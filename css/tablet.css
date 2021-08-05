@@ -1,0 +1,34 @@
+#hero {
+    height: 80vh;
+}
+#hero .carousel{
+    max-width:850px;
+    margin: 0 auto;
+    height: 450px;
+}
+#hero .carousel img{
+    height: 100%;
+}
+#hero .contenedor-boton-carrousel{
+    max-width:850px;
+    margin: 0 auto;
+}
+#hero .contenedor-boton-carrousel .boton-enlace{
+    transform: translateY(58px);
+    font-size: 30px;
+}
+#hero .contenedor-boton-carrousel .boton-enlace:hover{
+    transform: translateY(58px) scale(.98);
+}
+#hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{
+    border-left: 23px solid var(--color-primario);
+    border-top: 23px solid transparent;
+    border-bottom: 23px solid transparent;
+    right:-23px
+}
+#hero .contenedor-boton-carrousel .boton-enlace .triangle-left{
+    border-right: 23px solid var(--color-primario);
+    border-top: 23px solid transparent;
+    border-bottom: 23px solid transparent;
+    left: -23px;
+}

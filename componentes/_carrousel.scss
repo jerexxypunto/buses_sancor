@@ -1,0 +1,46 @@
+#hero{
+    .contenedor-boton-carrousel{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        .boton-enlace{
+            transform: translateY(-19px);
+            grid-column: 2/3;
+            color: white;
+            background-color: var(--color-primario);
+            text-align: center;
+            font-size:25px;
+            position: relative;
+            font-family: 'Cooper Black', Serif;
+            .triangle{
+                display: block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 0;
+                transition: .15s ease;
+                &-left{
+                    left: -19px;
+                    border-right: 19px solid var(--color-primario);
+                    border-top: 19px solid transparent;
+                    border-bottom: 19px solid transparent;
+                }
+                &-rigth{
+                    right: -19px;
+                    border-left: 19px solid var(--color-primario);
+                    border-top: 19px solid transparent;
+                    border-bottom: 19px solid transparent;
+                }
+            }
+            &:hover{
+                transform: translateY(-19px) scale(.98);
+                .triangle-left{
+                    transform: translateX(-10px);
+                }               
+                .triangle-rigth{
+                    transform: translateX(10px);
+                }               
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.pre-header{
+    height: 20px;
+    width: 100%;
+    background-color:var(--color-gray);
+}
+.header{
+    padding:10px 0;
+    .navigator{
+        justify-content: space-between;
+        &_menu{
+            &.desbanecido{
+                ul{
+                    height: 0;
+                }
+            }
+            &--button{
+                @media screen and (min-width:900px){
+                    display: none;
+                }
+                font-size: 36px;
+                color: var(--color-secundario);
+                nav{
+                    display: grid;
+                    place-items: center;
+                    height: 100%;
+                    &:hover{
+                        color: var(--color-primario);
+                    }
+                    &:active{
+                        transform: scale(.95);
+                    }
+                }
+            }
+            ul{
+                list-style: none;
+                margin:0;
+                padding:0;
+                transition: .5s ease-in-out ;
+                @media screen and (max-width:900px){
+                    height: 170px;
+                    overflow: hidden;
+                }
+                @media screen and (min-width:900px){
+                    display: flex;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+                li{
+                    padding: 5px 3px;
+                    a{
+                        font-family: 'Roboto Slab', serif;
+                        font-weight: bolder;
+                        font-style: italic;
+                    }
+                    @media screen and (min-width:900px){
+                        display: flex;
+                        align-items: center;
+                        font-size: 18px;
+                    }
+                    &:hover{
+                        padding-left: 10px;
+                        & > a{
+                            color: var(--color-secundario);
+                        }
+                        @media screen and (min-width:900px){
+                            padding: 5px 10px;
+                            transform: translateY(-1px) scale(1.1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

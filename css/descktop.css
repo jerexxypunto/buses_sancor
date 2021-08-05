@@ -1,0 +1,49 @@
+#hero {
+    min-height: 50vh;
+}
+#hero .carousel{
+    max-width:1000px;
+    margin: 0 auto;
+    height: 450px;
+}
+.carousel-inner{
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel img{
+    object-fit: cover;
+}
+#hero .contenedor-boton-carrousel{
+    transform: translateY(-30px);
+    max-width:1000px;
+    margin: 0 auto;
+}
+#hero .contenedor-boton-carrousel {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#hero .contenedor-boton-carrousel .boton-enlace{
+    transform: translateY(0px);
+    grid-column: 3/4;
+    font-size: 40px;
+}
+#hero .contenedor-boton-carrousel .boton-enlace:hover{
+    transform: scale(.99);
+}
+#hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{
+    border-left: 30px solid var(--color-primario);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    right:-30px
+}
+#hero .contenedor-boton-carrousel .boton-enlace .triangle-left{
+    border-right: 30px solid var(--color-primario);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    left: -30px;
+}

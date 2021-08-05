@@ -1,0 +1,38 @@
+.footer{
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--color-gray);
+    min-height: 30vh;
+    h3,h4{
+        text-align: center;
+    }
+    &__social{
+        padding-bottom: 30px;
+        &__item{
+        display: flex;
+        align-items: center;
+        width: max-content;
+        margin: 0 auto;
+            svg{
+                font-size: 20px;
+            }
+            p{
+                padding:0 0 0 10px;
+                margin: 0;
+            }
+        }
+    }
+    &__horarios{
+        h4{
+            margin-bottom: 15px;
+        }
+        p {
+            padding: 0;
+            text-align: center;
+        }
+        padding-bottom: 60px;
+    }
+    p{
+        text-align: center;
+    }
+}

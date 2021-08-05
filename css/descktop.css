@@ -1,5 +1,6 @@
 #hero {
     min-height: 50vh;
+    margin-bottom: 40px;
 }
 #hero .carousel{
     max-width:1000px;
@@ -46,4 +47,18 @@
     border-top: 30px solid transparent;
     border-bottom: 30px solid transparent;
     left: -30px;
+}
+.inicio-box{
+    margin-bottom: 40px;
+}
+
+.inicio-box figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.inicio-box img {
+  display: block;
+  max-height: 150px;
+  margin: 0;
 }

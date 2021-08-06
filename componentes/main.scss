@@ -23,12 +23,12 @@ img{
 h1{
     -webkit-text-stroke: 2px var(--color-primario);
     color: white;
-    font-family:'Cooper';
+    font-family:'Cooper', 'Roboto Slab', sans-serif;
 }
 h2{
     -webkit-text-stroke: 1.5px var(--color-primario);
     color: white;
-    font-family:'Cooper';
+    font-family:'Cooper', 'Roboto Slab', sans-serif;
 }
 h1,h2{
     color: white;
@@ -87,11 +87,16 @@ a{
     }
 }
 .blue-section{
+    background-color:var(--color-primario);
     background-image: url(../img/bg-1.jpg);
+    background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 200px;
+    padding: 200px 0;
     height: max-content;
     h3,p{
         color:white;
+    }
+    img{
+        height: 200px;
     }
 }

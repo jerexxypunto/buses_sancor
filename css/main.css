@@ -280,8 +280,6 @@ a:hover {
   -webkit-text-stroke-width: medium;
   font-style: italic;
   margin-bottom: 100px;
-  -webkit-box-shadow: 0 57px 0 -37px var(--color-primario);
-          box-shadow: 0 57px 0 -37px var(--color-primario);
 }
 .tituloDeSeccion span.black-text {
   color: var(--color-primario);
@@ -303,4 +301,47 @@ a:hover {
 }
 .blue-section img {
   height: 200px;
+}
+
+.item-flota h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.item-flota p {
+  text-align: justify;
+  padding: 0 5%;
+}
+
+.banner-flota {
+  height: 400px;
+}
+.banner-flota img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.info-page {
+  background-color: var(--color-primario);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 50vw;
+  padding: 15px 15px 15px 100px;
+  -webkit-box-shadow: 10px 10px 0 var(--color-secundario);
+          box-shadow: 10px 10px 0 var(--color-secundario);
+}
+.info-page h3 {
+  color: white;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+.info-page h3 svg {
+  margin-left: 30px;
+  display: inline-block;
+}
+.info-page p {
+  color: white;
 }

@@ -80,7 +80,6 @@ a{
   -webkit-text-stroke-width: medium;
   font-style: italic;
   margin-bottom: 100px;
-  box-shadow: 0 57px 0 -37px var(--color-primario);
   span.black-text{
       color: var(--color-primario);
       font-family: inherit;
@@ -98,5 +97,43 @@ a{
     }
     img{
         height: 200px;
+    }
+}
+.item-flota{
+    h3{
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+    p{
+        text-align: justify;
+        padding: 0 5%;
+    }
+}
+.banner-flota{
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    height: 400px;
+}
+.info-page{
+    background-color: var(--color-primario);
+    width: max-content;
+    max-width: 50vw;
+    padding: 15px  15px  15px 100px;
+    box-shadow: 10px 10px 0 var(--color-secundario);
+    h3{
+        color: white;
+        margin:0;
+        padding:0 0 20px 0;
+        svg{
+            margin-left:30px;
+            display: inline-block;
+        }
+    }
+    p{
+        color: white;
     }
 }

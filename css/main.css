@@ -315,8 +315,18 @@ a:hover {
   display: block;
   width: 100%;
 }
+.flota-page .contenedor-grid {
+  position: relative;
+}
 .flota-page article {
   padding-bottom: 15px;
+}
+.flota-page article.opacidad-0 {
+  opacity: 0;
+}
+.flota-page article.moveTop {
+  position: absolute;
+  top: 0;
 }
 .flota-page article:hover figure {
   -webkit-box-shadow: 0 0 0 3px var(--color-variacion);

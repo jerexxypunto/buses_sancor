@@ -21,10 +21,10 @@ get_header();
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" class="d-block w-100" alt="...">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/Hero/hero-1.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/2.jpg" class="d-block w-100" alt="...">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/Hero/hero-2.png"" class=" d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="<?php echo get_template_directory_uri(); ?>/img/3.jpg" class="d-block w-100" alt="...">
@@ -137,9 +137,9 @@ get_header();
           </div>
         </div>
       </div>
-  
-  
-  
+
+
+
     </div>
     <div class="blue-section">
       <div class="container">

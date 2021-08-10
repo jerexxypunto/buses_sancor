@@ -258,6 +258,11 @@ a:hover {
   padding: 0;
   text-align: center;
 }
+.footer__horarios .tabla-horario {
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
 .footer p {
   text-align: center;
 }
@@ -292,8 +297,6 @@ a:hover {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  width: 95%;
-  margin: 0 auto;
 }
 
 .inicio-box-container {

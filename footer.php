@@ -17,18 +17,28 @@
 	<h3>¡Contactanos! </h3>
 	<div class="footer__social">
 		<div class="footer__social__item"><i class="fab fa-facebook-f"></i>
-			<p>@buses.sancor</p>
+			<p><a href="http://www.facebook.com/transporteyturismosancor">facebook.com/transporteyturismosancor</a></p>
 		</div>
 		<div class="footer__social__item"><i class="fab fa-whatsapp"></i>
-			<p>+56 999 999 99</p>
+			<p><b>Victor Díaz:</b> <a href="tel:+56963167092">+56 963 167 092</a></p>
+		</div>
+		<div class="footer__social__item"><i class="fab fa-whatsapp"></i>
+			<p><b>Papa Miguel:</b><a href="tel:+56997223812">+56 997 223 812</a></p>
 		</div>
 		<div class="footer__social__item"><i class="far fa-envelope"></i>
-			<p>mail@mail.com</p>
+			<p><a href="mailto:contacto@sancor.cl">contacto@sancor.cl</a></p>
 		</div>
 	</div>
 	<div class="footer__horarios">
 		<h4>Horarios de atención telefonica <i class="fas fa-clock"></i></h4>
-		<p>Lunes a Domingo 09:00 a 17:00</p>
+		<div class="tabla-horario">
+			<div class="row">
+				<div class="col-6"><b>Lunes a Viernes</b></div>
+				<div class="col-6"><b>Sabados y Domingos</b></div>
+				<div class="col-6"><p>08:00 - 19:00</p></div>
+				<div class="col-6"><p>09:00 - 20:00</p></div>
+			</div>
+		</div>
 	</div>
 	<p>Buses Sancor &copy; Todos los derechos reservados</p>
 	<p>Desarrollado por <a href="www.gscdesigns.net">GSC Diseños</a></p>

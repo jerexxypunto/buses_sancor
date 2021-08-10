@@ -1,0 +1,17 @@
+.page-main article{
+    display: flex;
+    flex-direction: column;
+    .entry-header{
+        order: 2;
+    }
+    .post-thumbnail{
+        order: 1;
+        img{
+            object-position: center;
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+    .entry-content{
+        order: 3;
+}

@@ -24,6 +24,15 @@ h1 {
   -webkit-text-stroke: 2px var(--color-primario);
   color: white;
   font-family: "Cooper", "Roboto Slab", sans-serif;
+  font-size: 65px !important;
+  -webkit-text-stroke-width: medium;
+  font-style: italic;
+  margin-bottom: 100px;
+  text-align: center;
+}
+h1 span.black-text {
+  color: var(--color-primario);
+  font-family: inherit;
 }
 
 h2 {
@@ -253,6 +262,40 @@ a:hover {
   text-align: center;
 }
 
+.page-main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page-main article .entry-header {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.page-main article .post-thumbnail {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.page-main article .post-thumbnail img {
+  -o-object-position: center;
+     object-position: center;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-main article .entry-content {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  width: 95%;
+  margin: 0 auto;
+}
+
 .inicio-box-container {
   margin-bottom: 130px;
 }
@@ -273,17 +316,6 @@ a:hover {
   display: block;
   margin: 0 auto;
   max-height: 150px;
-}
-
-.tituloDeSeccion {
-  font-size: 65px;
-  -webkit-text-stroke-width: medium;
-  font-style: italic;
-  margin-bottom: 100px;
-}
-.tituloDeSeccion span.black-text {
-  color: var(--color-primario);
-  font-family: inherit;
 }
 
 .blue-section {

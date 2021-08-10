@@ -24,6 +24,15 @@ h1{
     -webkit-text-stroke: 2px var(--color-primario);
     color: white;
     font-family:'Cooper', 'Roboto Slab', sans-serif;
+    font-size: 65px !important;
+    -webkit-text-stroke-width: medium;
+    font-style: italic;
+    margin-bottom: 100px;
+    text-align: center;
+    span.black-text{
+        color: var(--color-primario);
+        font-family: inherit;
+        }
 }
 h2{
     -webkit-text-stroke: 1.5px var(--color-primario);
@@ -55,6 +64,7 @@ a{
 @import '_header.scss';
 @import '_carrousel.scss';
 @import '_footer.scss';
+@import '_page.scss';
 .inicio-box-container{
     margin-bottom: 130px;
     &:nth-child(2) + h3{
@@ -73,16 +83,6 @@ a{
         display: block;
         margin: 0 auto;
         max-height: 150px;
-    }
-}
-.tituloDeSeccion{
-  font-size: 65px;
-  -webkit-text-stroke-width: medium;
-  font-style: italic;
-  margin-bottom: 100px;
-  span.black-text{
-      color: var(--color-primario);
-      font-family: inherit;
     }
 }
 .blue-section{

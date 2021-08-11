@@ -20,7 +20,19 @@ get_header();
 	<h1 class="text-center">Flota</h1>
 	<div class="container">
 		<div class="contenedor-filtro">
-			<p><span>Todos</span><span>10-15</span><span>15-20</span><span>20-30</span></p>
+			<p><span>Todos
+				<br>
+				Asientos
+			</span><span>10-15
+				<br>
+				Asientos
+			</span><span>15-20
+				<br>
+				Asientos
+			</span><span>20-30
+				<br>
+				Asientos
+			</span></p>
 			<input type="range" value="0" name="filtro" id="filtro" min="0" max="15" step="5">
 			<button class="btn btn-sancor">filtrar</button>
 		</div>
@@ -47,9 +59,11 @@ get_header();
 		</div>
 	</div>
 </main><!-- #main -->
-<aside>
+<aside class="aside-flota">
 	<div class="container my-3">
-		<h3>Buscar por numero de pasajeros</h3>
+		<div class="title-container">
+			<h3>Buscar por numero de pasajeros</h3>
+		</div>
 		<div class="contenedor-grid grid-col-3 gap-30 p-3">
 			<article>
 				<a href="<?php echo bloginfo('url')?>/category/10-15/">

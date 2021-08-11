@@ -302,6 +302,7 @@ a:hover {
 .flota-page .contenedor-filtro {
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .flota-page .contenedor-filtro p {
   display: -webkit-box;
@@ -319,6 +320,12 @@ a:hover {
   position: relative;
   min-height: 50px;
 }
+@media screen and (max-width: 575px) {
+  .flota-page .contenedor-grid {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
 .flota-page article {
   padding-bottom: 15px;
 }
@@ -332,6 +339,17 @@ a:hover {
 .flota-page article p {
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 575px) {
+  .flota-page article figure a {
+    display: inline-block;
+    width: 100%;
+  }
+  .flota-page article figure a img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+  }
 }
 
 .btn-sancor {

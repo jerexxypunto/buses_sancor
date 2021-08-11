@@ -2,6 +2,7 @@
     .contenedor-filtro{
         max-width: 400px;
         margin: 0 auto;
+        margin-bottom: 50px;
         p{
             display: flex;
             justify-content: space-between;
@@ -14,6 +15,10 @@
     .contenedor-grid{
         position: relative;
         min-height: 50px;
+        @media screen and (max-width:575px){
+            max-width: 400px;
+            margin: 0 auto;
+        }
     }
     article{
         &:hover{
@@ -28,6 +33,18 @@
         p{
             margin:0;
             padding:0;
+        }
+        figure{
+            a{
+                @media screen and (max-width:575px){
+                    display: inline-block;
+                    width: 100%;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }

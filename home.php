@@ -24,7 +24,7 @@ get_header();
 			<input type="range" value="0" name="filtro" id="filtro" min="0" max="15" step="5">
 			<button class="btn btn-sancor">filtrar</button>
 		</div>
-		<div class="contenedor-grid grid-col-3 gap-30">
+		<div class="contenedor-grid grid-col-1 grid-col-sm-2 grid-col-lg-3 gap-30">
 			<?php
 			if (have_posts()) :
 				while (have_posts()) : the_post();

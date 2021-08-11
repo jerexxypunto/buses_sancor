@@ -13,15 +13,9 @@
     }
     .contenedor-grid{
         position: relative;
+        min-height: 50px;
     }
     article{
-        &.opacidad-0{
-            opacity: 0;
-        }
-        &.moveTop{
-            position: absolute;
-            top: 0;
-        }
         &:hover{
             figure{
                 box-shadow: 0 0 0 3px var(--color-variacion);

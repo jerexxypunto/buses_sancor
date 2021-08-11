@@ -13,68 +13,60 @@ function existe(a) {
 }
 
 let slider_filtro;
-let parametroFiltro;
+let categoria_a_filtrar;
 let boton_filtro;
-let articulos;
+let catalogo;
+let contenedor_catalogo;
+let catalogo_to_show = [];
+
+function categoria_igual(cat) {
+    catalogo.forEach(element => {
+        if (element.children[2].children[0].textContent === cat) {
+            catalogo_to_show.push(element);
+        }
+    });
+}
 
 // ----------- Si contenedor-filtro existe entonces -->
 if (existe(document.querySelector(".contenedor-filtro"))){
-   slider_filtro = document.querySelector("#filtro");
-   parametroFiltro = parseInt(slider_filtro.value);
-   boton_filtro = document.querySelector(".btn-sancor");
-   articulos = document.querySelectorAll(".flota-page .contenedor-grid article");
+    // Defino variables
+    slider_filtro = document.querySelector("#filtro");
+    boton_filtro = document.querySelector(".btn-sancor");
+    catalogo = document.querySelectorAll(".flota-page .contenedor-grid article");
+    contenedor_catalogo = document.querySelector(".flota-page .contenedor-grid");
+    //  Tomo el valor de input-range y lo convierto a numero entero   
+    categoria_a_filtrar = parseInt(slider_filtro.value);
+   
+
    boton_filtro.addEventListener('click',()=>{
-       parametroFiltro = parseInt(slider_filtro.value);
-       console.log(parametroFiltro);
-       switch (parametroFiltro) {
-           case 0:
-                articulos.forEach(a =>{
-                    if (a.classList[0] == 'opacidad-0' || a.classList[0] == 'moveTop') {
-                       a.classList.remove('opacidad-0');
-                       a.classList.remove('moveTop');
-                    }
+      catalogo_to_show = [];
+      categoria_a_filtrar = parseInt(slider_filtro.value);
+      switch (categoria_a_filtrar) {
+          case 0: 
+                catalogo.forEach(element => {
+                    element.remove();
                 });
-               break;
-            case 5 :
-                articulos.forEach(a => { 
-                    a.classList.add('opacidad-0');
-                    a.classList.remove('moveTop');
-                });
-                articulos.forEach(a =>{
-                   if (a.children[2].children[0].innerText === "10-15"){
-                       a.classList.remove('opacidad-0');
-                       a.classList.add('moveTop');
-                   }
-                });
-               break;
-            case 10 :
-                articulos.forEach(a => { 
-                    a.classList.add('opacidad-0');
-                    a.classList.remove('moveTop');
-                });
-                articulos.forEach(a =>{
-                   if (a.children[2].children[0].innerText === "15-20"){
-                       a.classList.remove('opacidad-0');
-                       a.classList.add('moveTop');
-                   }
-                });
-               break;
-            case 15 :
-                articulos.forEach(a => { 
-                    a.classList.add('opacidad-0');
-                    a.classList.remove('moveTop');
-                });
-                articulos.forEach(a =>{
-                   if (a.children[2].children[0].innerText === "20-30"){
-                       a.classList.remove('opacidad-0');
-                       a.classList.add('moveTop');
-                   }
-                });
-               break;
-       
-           default:
-               break;
-       }
-   })
+                contenedor_catalogo.append(...catalogo);
+              break;
+          case 5: 
+                categoria_igual("10-15");
+                catalogo.forEach(e => e.remove());
+              contenedor_catalogo.append(...catalogo_to_show);
+              break;
+          case 10: 
+                categoria_igual("15-20");
+                catalogo.forEach(e => e.remove());
+              contenedor_catalogo.append(...catalogo_to_show);
+              break;
+          case 15: 
+                categoria_igual("20-30");
+                catalogo.forEach(e => e.remove());
+              contenedor_catalogo.append(...catalogo_to_show);
+              break;
+      
+          default:
+              break;
+      }
+   });
 
 }

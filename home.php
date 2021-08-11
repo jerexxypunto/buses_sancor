@@ -31,7 +31,9 @@ get_header();
 			?>
 					<article>
 						<figure>
-							<?php the_post_thumbnail() ?>
+							<a href="<?php the_permalink() ?>">
+								<?php the_post_thumbnail() ?>
+							</a>
 						</figure>
 						<h3><?php the_title(); ?></h3>
 						<p>
@@ -44,8 +46,29 @@ get_header();
 			?>
 		</div>
 	</div>
-
 </main><!-- #main -->
+<aside>
+	<div class="container my-3">
+		<h3>Buscar por numero de pasajeros</h3>
+		<div class="contenedor-grid grid-col-3 gap-30 p-3">
+			<article>
+				<a href="<?php echo bloginfo('url')?>/category/10-15/">
+					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-1.png" alt="Categoria 10-15"></figure>
+				</a>
+			</article>
+			<article>
+				<a href="<?php echo bloginfo('url')?>/category/15-20/">
+					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-2.png" alt="Categoria 15-20"></figure>
+				</a>
+			</article>
+			<article>
+				<a href="<?php echo bloginfo('url')?>/category/20-30/">
+					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-3.png" alt="Categoria 20-30"></figure>
+				</a>
+			</article>
+		</div>
+	</div>
+</aside>
 
 <?php
 get_footer();

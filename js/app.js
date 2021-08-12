@@ -49,17 +49,17 @@ if (existe(document.querySelector(".contenedor-filtro"))){
                 contenedor_catalogo.append(...catalogo);
               break;
           case 5: 
-                categoria_igual("10-15");
+                categoria_igual("1-11");
                 catalogo.forEach(e => e.remove());
               contenedor_catalogo.append(...catalogo_to_show);
               break;
           case 10: 
-                categoria_igual("15-20");
+                categoria_igual("12-32");
                 catalogo.forEach(e => e.remove());
               contenedor_catalogo.append(...catalogo_to_show);
               break;
           case 15: 
-                categoria_igual("20-30");
+                categoria_igual("33-48");
                 catalogo.forEach(e => e.remove());
               contenedor_catalogo.append(...catalogo_to_show);
               break;

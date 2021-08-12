@@ -17,16 +17,16 @@
 	<h3>¡Contactanos! </h3>
 	<div class="footer__social">
 		<div class="footer__social__item"><i class="fab fa-facebook-f"></i>
-			<p><a href="http://www.facebook.com/transporteyturismosancor">facebook.com/transporteyturismosancor</a></p>
+			<p><b>Facebook fan-page: </b><a href="http://www.facebook.com/transporteyturismosancor">facebook.com/transporteyturismosancor</a></p>
 		</div>
 		<div class="footer__social__item"><i class="fab fa-whatsapp"></i>
 			<p><b>Victor Díaz:</b> <a href="tel:+56963167092">+56 963 167 092</a></p>
 		</div>
 		<div class="footer__social__item"><i class="fab fa-whatsapp"></i>
-			<p><b>Papa Miguel:</b><a href="tel:+56997223812">+56 997 223 812</a></p>
+			<p><b>Roberto Sandoval:</b><a href="tel:+56997223812">+56 997 223 812</a></p>
 		</div>
 		<div class="footer__social__item"><i class="far fa-envelope"></i>
-			<p><a href="mailto:contacto@sancor.cl">contacto@sancor.cl</a></p>
+			<p><b>E-mail: </b><a href="mailto:contacto@sancor.cl">contacto@sancor.cl</a></p>
 		</div>
 	</div>
 	<div class="footer__horarios">

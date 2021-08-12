@@ -74,7 +74,7 @@
     .title-container{
         background-image: url(../img/bg-title.png);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: contain;
         height: 100px;
         display: flex;
         align-items: center;

@@ -23,13 +23,13 @@ get_header();
 			<p><span>Todos
 				<br>
 				Asientos
-			</span><span>10-15
+			</span><span>1-11
 				<br>
 				Asientos
-			</span><span>15-20
+			</span><span>12-32
 				<br>
 				Asientos
-			</span><span>20-30
+			</span><span>33-48
 				<br>
 				Asientos
 			</span></p>
@@ -64,20 +64,20 @@ get_header();
 		<div class="title-container">
 			<h3>Buscar por numero de pasajeros</h3>
 		</div>
-		<div class="contenedor-grid grid-col-3 gap-30 p-3">
+		<div class="contenedor-grid grid-col-1 grid-col-sm-2 grid-col-md-3 gap-30 p-3">
 			<article>
-				<a href="<?php echo bloginfo('url')?>/category/10-15/">
-					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-1.png" alt="Categoria 10-15"></figure>
+				<a href="<?php echo bloginfo('url')?>/category/1-11-pasajeros/">
+					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-1.png" alt="Categoria 1-11"></figure>
 				</a>
 			</article>
 			<article>
-				<a href="<?php echo bloginfo('url')?>/category/15-20/">
-					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-2.png" alt="Categoria 15-20"></figure>
+				<a href="<?php echo bloginfo('url')?>/category/12-32-pasajeros/">
+					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-2.png" alt="Categoria 12-32"></figure>
 				</a>
 			</article>
 			<article>
-				<a href="<?php echo bloginfo('url')?>/category/20-30/">
-					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-3.png" alt="Categoria 20-30"></figure>
+				<a href="<?php echo bloginfo('url')?>/category/33-48-pasajeros/">
+					<figure><img src="<?php echo get_template_directory_uri() ?>/img/category-3.png" alt="Categoria 33-48"></figure>
 				</a>
 			</article>
 		</div>

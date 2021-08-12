@@ -17,7 +17,7 @@
 	<h3>¡Contactanos! </h3>
 	<div class="footer__social">
 		<div class="footer__social__item"><i class="fab fa-facebook-f"></i>
-			<p><b>Facebook fan-page: </b><a href="http://www.facebook.com/transporteyturismosancor">facebook.com/transporteyturismosancor</a></p>
+			<p><a href="http://www.facebook.com/transporteyturismosancor">facebook.com/transporteyturismosancor</a></p>
 		</div>
 		<div class="footer__social__item"><i class="fab fa-whatsapp"></i>
 			<p><b>Victor Díaz:</b> <a href="tel:+56963167092">+56 963 167 092</a></p>

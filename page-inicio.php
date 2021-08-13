@@ -15,6 +15,13 @@
 
 get_header();
 ?>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <main>
   <!-- Hero -->
   <section id="hero">
@@ -27,7 +34,7 @@ get_header();
           <img src="<?php echo get_template_directory_uri(); ?>/img/Hero/hero-2.png"" class=" d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/3.jpg" class="d-block w-100" alt="...">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/Hero/hero-3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -157,7 +164,32 @@ get_header();
               reservar tu viaje necesitaras abonar un 50% del valor este.</p>
           </div>
         </div>
-      </div>
+    </div>
+  </section>
+  <section class="social">
+    <picture>
+      <source 
+          media="(min-width:900px )" 
+          srcset="<?php echo get_template_directory_uri()?>/img/facebook-coments.jpg"
+      >
+      <source 
+          media="(min-width:500px )" 
+          srcset="<?php echo get_template_directory_uri()?>/img/facebook-coments-md.jpg"
+      >
+      <img 
+        class="img-fluid" 
+        src="<?php echo get_template_directory_uri()?>/img/facebook-coments-mobile.jpg"
+        alt="banner-social"
+      >
+    </picture>
+    <div class="py-4 container">
+      <center>
+        <div 
+          class="fb-comments" 
+          data-href="http://www.sancor.cl/comments/"
+          data-width="100%" data-numposts="2">
+        </div>
+      </center>
     </div>
   </section>
   <!-- ¿Qué hacemos? - END -->

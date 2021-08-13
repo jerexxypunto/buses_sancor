@@ -1,6 +1,7 @@
 :root{
     --color-primario:#000F63;
     --color-secundario:#3D76CE;
+    --color-terciario:#33CAF5;
     --color-variacion:#275933;
 
     --color-gray:#c6c6c6;
@@ -68,6 +69,7 @@ a{
 @import '_home.scss';
 @import '_single.scss';
 @import '_category.scss';
+@import '_widgets.scss';
 .inicio-box-container{
     margin-bottom: 130px;
     &:nth-child(2) + h3{

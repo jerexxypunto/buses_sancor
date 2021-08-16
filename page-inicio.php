@@ -52,8 +52,8 @@ get_header();
   </section>
   <!-- Hero - end -->
   <!-- ¿Qué hacemos? -->
-  <h1 class="text-center tituloDeSeccion"><span class="black-text">¿</span> Por qué elegir Buses Sancor <span class="black-text">?</span></h1>
   <section id="hacemos">
+    <h1 class="text-center tituloDeSeccion"><span class="black-text">¿</span> Por qué elegir Buses Sancor <span class="black-text">?</span></h1>
     <div class="container">
       <h3>Nos tomamos enserio tu seguridad y comodidad</h3>
       <div class="inicio-box-container">

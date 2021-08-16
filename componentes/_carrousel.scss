@@ -7,7 +7,11 @@
             transform: translateY(-19px);
             grid-column: 2/3;
             color: white;
-            background-color: var(--color-primario);
+            background-image: linear-gradient(
+                                var(--color-secundario) 10%,
+                                var(--color-primario) 20%,
+                                var(--color-primario) 80%,
+                                var(--color-secundario)100%);
             text-align: center;
             font-size:25px;
             position: relative;

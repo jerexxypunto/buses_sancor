@@ -71,8 +71,7 @@ a:hover {
 .pre-header {
   height: 20px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--color-terciario)), to(var(--color-secundario)));
-  background-image: linear-gradient(var(--color-terciario), var(--color-secundario));
+  background-color: var(--color-secundario);
 }
 
 .header {
@@ -179,7 +178,8 @@ a:hover {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   color: white;
-  background-color: var(--color-primario);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, var(--color-secundario)), color-stop(20%, var(--color-primario)), color-stop(80%, var(--color-primario)), to(var(--color-secundario)));
+  background-image: linear-gradient(var(--color-secundario) 10%, var(--color-primario) 20%, var(--color-primario) 80%, var(--color-secundario) 100%);
   text-align: center;
   font-size: 25px;
   position: relative;

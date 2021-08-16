@@ -47,7 +47,9 @@ get_header();
                             <textarea class="form-control" placeholder="Ingrese su mensaje" name="mensaje" id="msg" cols="30" rows="10"></textarea>
                         </label>
                         <span id="res-msg" class="col-2"></span>
-                        <input type="submit" id="send-button" value="Enviar" name="enviar">
+                        <div class="col-10">
+                            <input type="submit" id="send-button" value="Enviar" name="enviar">
+                        </div>
                     </div>
                 </form>
                 <div class="col-12 col-md-5 map">

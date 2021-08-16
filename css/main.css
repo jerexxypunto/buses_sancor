@@ -531,6 +531,11 @@ a:hover {
   border: 0;
   outline: none;
 }
+.page-contacto #send-button {
+  width: 100%;
+  color: white;
+  background-color: var(--color-primario);
+}
 
 .inicio-box-container {
   margin-bottom: 130px;

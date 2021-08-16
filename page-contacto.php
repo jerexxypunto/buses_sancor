@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -24,24 +25,29 @@ get_header();
         </figure>
         <div class="container-fluid">
             <div class="row">
-                <form class="col-12 col-md-7" action="./" method="post">
+                <form class="col-12 col-md-7" id="formulario" action="../enviar" method="post">
                     <div class="row">
                         <label class="col-10 pb-3">
                             Nombre de pila
-                            <input class="form-control" id="Nombre" type="text" placeholder="Jhon Doe" name="nombre">
+                            <input class="form-control" id="Nombre" type="text" placeholder="Jhon Doe" name="nombreDePila">
                         </label>
+                        <span id="res-nombre" class="col-2"></span>
                         <label class="col-10 pb-3">
                             Télefono
                             <input class="form-control" id="telefono" type="text" placeholder="+56 999 999 999" name="telefono">
                         </label>
+                        <span id="res-telefono col-2"></span>
                         <label class="col-10 pb-3">
                             Correo electronico
-                            <input class="form-control" id="mail" type="mail" placeholder="mail@mailito.com" name="mail">
+                            <input class="form-control" id="mail" type="mail" placeholder="mail@mailito.com" name="correo">
                         </label>
+                        <span id="res-mail" class="col-2"></span>
                         <label class="col-10 pb-3">
                             Mensaje
                             <textarea class="form-control" placeholder="Ingrese su mensaje" name="mensaje" id="msg" cols="30" rows="10"></textarea>
                         </label>
+                        <span id="res-msg" class="col-2"></span>
+                        <input type="submit" id="send-button" value="Enviar" name="enviar">
                     </div>
                 </form>
                 <div class="col-12 col-md-5 map">

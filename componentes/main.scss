@@ -55,6 +55,12 @@ h3{
     margin-bottom: 40px;
 }
 
+label{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color:var(--color-primario);
+}
+
 a{
     color: var(--color-variacion);
     &:hover{
@@ -122,7 +128,7 @@ a{
         width: 100%;
         height: 100%;
     }
-    height: 400px;
+    height: 200px;
 }
 .info-page{
     background-color: var(--color-primario);

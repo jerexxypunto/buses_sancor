@@ -3,7 +3,7 @@
         position: relative;
         figcaption{
             position: absolute;
-            right: 20%;
+            right: 10%;
             top: 0;
             bottom: 0;
             margin: auto 0;
@@ -11,9 +11,40 @@
             h1{
                 margin:0;
                 padding:0;
-                font-size: 80px !important;
             }
         }
+    }
+    #formulario{
+        input,textarea{
+            border:1.5px solid var(--color-primario);
+            border-radius: 0px;
+            padding-left: 10px;
+            &:focus{
+                border:2px solid var(--color-variacion);
+                outline: none;
+            }
+            &.correcto{
+                border:2px solid #00D200;
+            }
+            &.incorrecto{
+                border: 2px solid #FF0000;
+            }
+        }
+        span{
+                display: inline-block;
+                width:30px;
+                height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: relative;
+                top: 30px;
+                &.acepted{
+                    background-image:url("../img/form/check.png");
+                }
+                &.error{
+                    background-image:url("../img/form/error.png");
+                }
+            }
     }
     .map{
         iframe{
@@ -22,5 +53,7 @@
             border: 0;
             outline: none;
         }
+        min-height:600px;
+        padding-bottom: 30px;
     }
 }

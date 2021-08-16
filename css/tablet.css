@@ -31,3 +31,14 @@
     border-bottom: 23px solid transparent;
     left: -23px;
 }
+.banner-flota {
+    height: 400px;
+    margin-bottom: 100px;
+}
+.page-contacto .banner-flota figcaption {
+  position: absolute;
+  right: 20%;
+}
+.page-contacto .banner-flota figcaption h1 {
+  font-size: 80px !important;
+}

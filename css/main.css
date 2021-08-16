@@ -60,6 +60,12 @@ h3 {
   margin-bottom: 40px;
 }
 
+label {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  color: var(--color-primario);
+}
+
 a {
   color: var(--color-variacion);
 }
@@ -473,7 +479,7 @@ a:hover {
 }
 .page-contacto .banner-flota figcaption {
   position: absolute;
-  right: 20%;
+  right: 10%;
   top: 0;
   bottom: 0;
   margin: auto 0;
@@ -484,7 +490,40 @@ a:hover {
 .page-contacto .banner-flota figcaption h1 {
   margin: 0;
   padding: 0;
-  font-size: 80px !important;
+}
+.page-contacto #formulario input, .page-contacto #formulario textarea {
+  border: 1.5px solid var(--color-primario);
+  border-radius: 0px;
+  padding-left: 10px;
+}
+.page-contacto #formulario input:focus, .page-contacto #formulario textarea:focus {
+  border: 2px solid var(--color-variacion);
+  outline: none;
+}
+.page-contacto #formulario input.correcto, .page-contacto #formulario textarea.correcto {
+  border: 2px solid #00D200;
+}
+.page-contacto #formulario input.incorrecto, .page-contacto #formulario textarea.incorrecto {
+  border: 2px solid #FF0000;
+}
+.page-contacto #formulario span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 30px;
+}
+.page-contacto #formulario span.acepted {
+  background-image: url("../img/form/check.png");
+}
+.page-contacto #formulario span.error {
+  background-image: url("../img/form/error.png");
+}
+.page-contacto .map {
+  min-height: 600px;
+  padding-bottom: 30px;
 }
 .page-contacto .map iframe {
   height: 100%;
@@ -543,7 +582,7 @@ a:hover {
 }
 
 .banner-flota {
-  height: 400px;
+  height: 200px;
 }
 .banner-flota img {
   -o-object-fit: cover;

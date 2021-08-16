@@ -1,0 +1,26 @@
+.page-contacto{
+    .banner-flota{
+        position: relative;
+        figcaption{
+            position: absolute;
+            right: 20%;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            height: max-content;
+            h1{
+                margin:0;
+                padding:0;
+                font-size: 80px !important;
+            }
+        }
+    }
+    .map{
+        iframe{
+            height: 100%;
+            width: 100%;
+            border: 0;
+            outline: none;
+        }
+    }
+}

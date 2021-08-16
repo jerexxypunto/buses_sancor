@@ -468,6 +468,31 @@ a:hover {
      object-fit: contain;
 }
 
+.page-contacto .banner-flota {
+  position: relative;
+}
+.page-contacto .banner-flota figcaption {
+  position: absolute;
+  right: 20%;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.page-contacto .banner-flota figcaption h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 80px !important;
+}
+.page-contacto .map iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline: none;
+}
+
 .inicio-box-container {
   margin-bottom: 130px;
 }

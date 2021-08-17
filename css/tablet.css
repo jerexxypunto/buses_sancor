@@ -13,7 +13,7 @@
     margin: 0 auto;
 }
 #hero .contenedor-boton-carrousel .boton-enlace{
-    transform: translateY(58px);
+    transform: translateY(-115px);
     font-size: 30px;
 }
 #hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{

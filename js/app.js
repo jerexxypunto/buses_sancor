@@ -20,6 +20,11 @@ let contenedor_catalogo;
 let catalogo_to_show = [];
 
 let boton_slider;
+let ruta_now;
+let rutas = { 
+    "hero-1": "/#hacemos",
+    "hero-2": "/#hacemos",
+    "hero-3": "/contacto"}
 
 function categoria_igual(cat) {
     catalogo.forEach(element => {

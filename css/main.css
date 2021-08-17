@@ -196,8 +196,17 @@ a:hover {
 }
 #hero .contenedor-boton-carrousel .boton-enlace:hover {
   background-image: none;
-  -webkit-animation: bounce 0.5s ease-in-out;
-          animation: bounce 0.5s ease-in-out;
+  -webkit-animation-name: animate__pulse;
+          animation-name: animate__pulse;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+#hero .contenedor-boton-carrousel .boton-enlace:active {
+  background-image: none;
+  -webkit-animation-name: animate__flash;
+          animation-name: animate__flash;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 #hero .contenedor-boton-carrousel .boton-enlace .triangle {
   display: block;

@@ -15,7 +15,13 @@
                                 var(--color-secundario)100%);
             &:hover{
                 background-image: none;
-                animation: bounce .5s ease-in-out;
+                animation-name:animate__pulse;
+                animation-duration: 1s;
+            }
+            &:active{
+                background-image: none;
+                animation-name:animate__flash;
+                animation-duration: 1s;
             }
             text-align: center;
             font-size:25px;

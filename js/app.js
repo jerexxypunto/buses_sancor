@@ -19,12 +19,18 @@ let catalogo;
 let contenedor_catalogo;
 let catalogo_to_show = [];
 
+let boton_slider;
+
 function categoria_igual(cat) {
     catalogo.forEach(element => {
         if (element.children[2].children[0].textContent === cat) {
             catalogo_to_show.push(element);
         }
     });
+}
+
+if (existe(document.querySelector(".boton-enlace"))) {
+    boton_slider = document.querySelector(".boton-enlace");
 }
 
 // ----------- Si contenedor-filtro existe entonces -->

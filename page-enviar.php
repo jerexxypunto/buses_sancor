@@ -21,7 +21,11 @@ get_header();
 ?>
 
 <main class="container">
-        <?php echo $body ?>
+        <?php 
+             mail('jerexxypunto@gmail.com','Corre enviardo desde busessacor.cl', $body);
+             headers('location:page-contacto');
+        
+        ?>
 </main>
 
 

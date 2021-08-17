@@ -45,6 +45,18 @@
                     background-image:url("../img/form/error.png");
                 }
             }
+        .submit-ocultar{
+            display: block;
+            height: 34px;
+            position: relative;
+            top: -34px;
+            width: 100%;
+            background-color: rgba(#000,.5);
+            &.disabled{
+                top:0;
+                transform: scale(0);
+            }
+        }
     }
     .map{
         iframe{

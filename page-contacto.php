@@ -39,7 +39,7 @@ get_header();
                         <span id="res-telefono col-2"></span>
                         <label class="col-10 pb-3">
                             Correo electronico
-                            <input class="form-control" id="mail" type="mail" placeholder="mail@mailito.com" name="correo">
+                            <input class="form-control" id="mail" type="email" placeholder="mail@mailito.com" name="correo">
                         </label>
                         <span id="res-mail" class="col-2"></span>
                         <label class="col-10 pb-3">
@@ -49,6 +49,16 @@ get_header();
                         <span id="res-msg" class="col-2"></span>
                         <div class="col-10">
                             <input type="submit" id="send-button" value="Enviar" name="enviar">
+                            <span class="submit-ocultar"></span>
+                            <div class="alert-container">
+                                <div class="alert alert-warning">
+                                    <p> * El nombre de pila hace referencia sólo al primer nombre y al primer apellido. <p/> 
+                                    <p> * El teléfono se escribe sin simbolos extraños [-, +, $, etc.]. </p>
+                                </div>
+                                <div class="alert alert-danger">
+                                    Por favor NO deje ninguna casilla en blanco, si las casillas no se llenan correctamente, no podrá enviarse el formulario.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>

@@ -68,7 +68,7 @@ get_header();
                 que nos permiten contar con un amplio respaldo de nuestros usuarios.</p>
             </div>
             <div class="col-12 col-md-6">
-              <figure>
+              <figure class="justify-content-center">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/buses.png" alt="buses">
               </figure>
             </div>
@@ -85,7 +85,7 @@ get_header();
               </p>
             </div>
             <div class="col-12 col-md-6">
-              <figure>
+              <figure class="justify-content-center">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/tools.png" alt="Herramientas">
               </figure>
             </div>
@@ -105,7 +105,7 @@ get_header();
               </p>
             </div>
             <div class="col-12 col-md-6">
-              <figure>
+              <figure class="justify-content-center">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/happy.png" alt="happy">
               </figure>
             </div>
@@ -117,7 +117,7 @@ get_header();
         <div class="inicio-box">
           <div class="row">
             <div class="col-12 col-md-6">
-              <figure class="justify-content-end">
+              <figure class="justify-content-center">
                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/Hablar.png" alt="dos personas hablando">
               </figure>
             </div>
@@ -133,7 +133,7 @@ get_header();
         <div class="inicio-box">
           <div class="row">
             <div class="col-12 col-md-6">
-              <figure class="justify-content-end">
+              <figure class="justify-content-center">
                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/Ahorro.png" alt="Ahorro">
               </figure>
             </div>

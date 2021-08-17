@@ -196,6 +196,8 @@ a:hover {
 }
 #hero .contenedor-boton-carrousel .boton-enlace:hover {
   background-image: none;
+  -webkit-animation: bounce 0.5s ease-in-out;
+          animation: bounce 0.5s ease-in-out;
 }
 #hero .contenedor-boton-carrousel .boton-enlace .triangle {
   display: block;

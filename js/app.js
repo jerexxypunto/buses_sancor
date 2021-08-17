@@ -18,13 +18,12 @@ let boton_filtro;
 let catalogo;
 let contenedor_catalogo;
 let catalogo_to_show = [];
-
+let ruta_prima;
 let boton_slider;
-let ruta_now;
 let rutas = { 
-    "hero-1": "/#hacemos",
-    "hero-2": "/#hacemos",
-    "hero-3": "/contacto"}
+    hero_1 : "#hacemos",
+    hero_2: "contacto",
+    hero_3: "flota"}
 
 function categoria_igual(cat) {
     catalogo.forEach(element => {
@@ -35,7 +34,37 @@ function categoria_igual(cat) {
 }
 
 if (existe(document.querySelector(".boton-enlace"))) {
+    let counter = 0;
     boton_slider = document.querySelector(".boton-enlace");
+    let arrowPrev = document.querySelector(".carousel-control-prev");
+    let arrowNext = document.querySelector(".carousel-control-next");
+    ruta_prima = boton_slider.baseURI;
+    function cambiarSrc(num) {
+        switch (num) {
+            case 0:
+                boton_slider.href = ruta_prima + rutas.hero_1;
+                break;
+            case 1:
+                boton_slider.href = ruta_prima + rutas.hero_2;
+                break;
+            case 2:
+                boton_slider.href = ruta_prima + rutas.hero_3;
+                break;
+        
+            default:
+                break;
+        }        
+    }
+    arrowPrev.addEventListener('click',()=>{
+        counter == 0 ? counter = 2 : counter--;
+        console.log(counter)
+        cambiarSrc(counter);
+    });
+    arrowNext.addEventListener('click',()=>{
+        counter == 2 ? counter = 0 : counter++;
+        console.log(counter)
+        cambiarSrc(counter);
+    });
 }
 
 // ----------- Si contenedor-filtro existe entonces -->

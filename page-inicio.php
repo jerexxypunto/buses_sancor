@@ -47,7 +47,7 @@ get_header();
       </a>
     </div>
     <div class="contenedor-boton-carrousel">
-      <a class="boton-enlace" href="#"><span class="triangle triangle-left"></span>Leer más<span class="triangle triangle-rigth"></span></a>
+      <a class="boton-enlace" href="./"><span class="triangle triangle-left"></span>Leer más<span class="triangle triangle-rigth"></span></a>
     </div>
   </section>
   <!-- Hero - end -->

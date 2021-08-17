@@ -19,6 +19,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootsrap.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/tablet.css" media="screen and (min-width:900px)">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/descktop.css" media="screen and (min-width:992px)">

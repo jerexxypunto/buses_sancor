@@ -7,15 +7,21 @@
             transform: translateY(-19px);
             grid-column: 2/3;
             color: white;
+            background-color: var(--color-primario);
             background-image: linear-gradient(
                                 var(--color-secundario) 10%,
                                 var(--color-primario) 20%,
                                 var(--color-primario) 80%,
                                 var(--color-secundario)100%);
+            &:hover{
+                background-image: none;
+                animation: bounce .5s ease-in-out;
+            }
             text-align: center;
             font-size:25px;
             position: relative;
             font-family: 'Cooper Black', Serif;
+            box-shadow: 0px 6px 9px rgba(#000,.5);
             .triangle{
                 display: block;
                 width: 0;
@@ -35,15 +41,6 @@
                     border-top: 19px solid transparent;
                     border-bottom: 19px solid transparent;
                 }
-            }
-            &:hover{
-                transform: translateY(-19px) scale(.98);
-                .triangle-left{
-                    transform: translateX(-10px);
-                }               
-                .triangle-rigth{
-                    transform: translateX(10px);
-                }               
             }
         }
     }

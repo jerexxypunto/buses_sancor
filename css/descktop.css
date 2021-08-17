@@ -32,9 +32,6 @@
     grid-column: 3/4;
     font-size: 40px;
 }
-#hero .contenedor-boton-carrousel .boton-enlace:hover{
-    transform: scale(.99);
-}
 #hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{
     border-left: 30px solid var(--color-primario);
     border-top: 30px solid transparent;

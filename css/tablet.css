@@ -16,9 +16,6 @@
     transform: translateY(58px);
     font-size: 30px;
 }
-#hero .contenedor-boton-carrousel .boton-enlace:hover{
-    transform: translateY(58px) scale(.98);
-}
 #hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{
     border-left: 23px solid var(--color-primario);
     border-top: 23px solid transparent;

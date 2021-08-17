@@ -184,12 +184,18 @@ a:hover {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   color: white;
+  background-color: var(--color-primario);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, var(--color-secundario)), color-stop(20%, var(--color-primario)), color-stop(80%, var(--color-primario)), to(var(--color-secundario)));
   background-image: linear-gradient(var(--color-secundario) 10%, var(--color-primario) 20%, var(--color-primario) 80%, var(--color-secundario) 100%);
   text-align: center;
   font-size: 25px;
   position: relative;
   font-family: "Cooper Black", Serif;
+  -webkit-box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.5);
+}
+#hero .contenedor-boton-carrousel .boton-enlace:hover {
+  background-image: none;
 }
 #hero .contenedor-boton-carrousel .boton-enlace .triangle {
   display: block;
@@ -211,18 +217,6 @@ a:hover {
   border-left: 19px solid var(--color-primario);
   border-top: 19px solid transparent;
   border-bottom: 19px solid transparent;
-}
-#hero .contenedor-boton-carrousel .boton-enlace:hover {
-  -webkit-transform: translateY(-19px) scale(0.98);
-          transform: translateY(-19px) scale(0.98);
-}
-#hero .contenedor-boton-carrousel .boton-enlace:hover .triangle-left {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-}
-#hero .contenedor-boton-carrousel .boton-enlace:hover .triangle-rigth {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
 }
 
 .footer {

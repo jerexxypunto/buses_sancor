@@ -19,7 +19,9 @@ get_header();
 		<h1><?php the_title(); ?></h1>
 		<p><?php echo the_category() ?></p>
 		<section class="content">
-			<?php the_content() ?>
+			<div class="container">
+				<?php the_content() ?>
+			</div>
 		</section>
 	</main>
 

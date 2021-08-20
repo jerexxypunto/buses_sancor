@@ -544,7 +544,7 @@ a:hover {
   padding-bottom: 30px;
 }
 .page-contacto .map iframe {
-  height: 100%;
+  height: 90%;
   width: 100%;
   border: 0;
   outline: none;

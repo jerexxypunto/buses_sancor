@@ -63,11 +63,11 @@ if (existe(document.querySelector(".boton-enlace"))) {
         console.log(counter)
         cambiarSrc(counter);
     });
-    // setInterval(() => {
-    //     counter == 2 ? counter = 0 : counter++;
-    //     console.log(counter)
-    //     cambiarSrc(counter);
-    // }, 3000);
+    setInterval(() => {
+        counter == 2 ? counter = 0 : counter++;
+        console.log(counter)
+        cambiarSrc(counter);
+    }, 5500);
 }
 
 // ----------- Si contenedor-filtro existe entonces -->

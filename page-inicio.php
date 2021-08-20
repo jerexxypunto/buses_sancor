@@ -25,7 +25,7 @@ get_header();
 <main>
   <!-- Hero -->
   <section id="hero">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-iterval="6000" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="<?php echo get_template_directory_uri(); ?>/img/Hero/hero-1.png" class="d-block w-100" alt="...">

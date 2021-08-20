@@ -11,7 +11,7 @@ function existe(a) {
         return false
     }
 }
-
+let counter = 0;
 let slider_filtro;
 let categoria_a_filtrar;
 let boton_filtro;
@@ -34,7 +34,6 @@ function categoria_igual(cat) {
 }
 
 if (existe(document.querySelector(".boton-enlace"))) {
-    let counter = 0;
     boton_slider = document.querySelector(".boton-enlace");
     let arrowPrev = document.querySelector(".carousel-control-prev");
     let arrowNext = document.querySelector(".carousel-control-next");
@@ -64,6 +63,11 @@ if (existe(document.querySelector(".boton-enlace"))) {
         console.log(counter)
         cambiarSrc(counter);
     });
+    // setInterval(() => {
+    //     counter == 2 ? counter = 0 : counter++;
+    //     console.log(counter)
+    //     cambiarSrc(counter);
+    // }, 3000);
 }
 
 // ----------- Si contenedor-filtro existe entonces -->

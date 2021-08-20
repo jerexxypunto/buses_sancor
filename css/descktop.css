@@ -16,9 +16,9 @@
     object-fit: cover;
 }
 #hero .contenedor-boton-carrousel{
-    transform: translateY(-30px);
     max-width:1000px;
     margin: 0 auto;
+    transform: translateY(-11px);
 }
 #hero .contenedor-boton-carrousel {
   width: 100%;
@@ -28,7 +28,6 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 #hero .contenedor-boton-carrousel .boton-enlace{
-    transform: translateY(0px);
     grid-column: 3/4;
     font-size: 40px;
 }

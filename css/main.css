@@ -564,6 +564,10 @@ a:hover {
   margin-top: 40px;
 }
 
+.carousel-inner {
+  overflow: visible;
+}
+
 .inicio-box .row {
   width: 100vw;
   overflow: hidden;

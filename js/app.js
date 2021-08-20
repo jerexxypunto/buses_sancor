@@ -18,7 +18,7 @@ let boton_filtro;
 let catalogo;
 let contenedor_catalogo;
 let catalogo_to_show = [];
-let ruta_prima;
+let ruta_prima = "./";
 let boton_slider;
 let rutas = { 
     hero_1 : "#hacemos",
@@ -38,7 +38,6 @@ if (existe(document.querySelector(".boton-enlace"))) {
     boton_slider = document.querySelector(".boton-enlace");
     let arrowPrev = document.querySelector(".carousel-control-prev");
     let arrowNext = document.querySelector(".carousel-control-next");
-    ruta_prima = boton_slider.baseURI;
     function cambiarSrc(num) {
         switch (num) {
             case 0:

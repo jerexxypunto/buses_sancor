@@ -13,7 +13,7 @@ get_header();
 	<main class="single-page" id="single-page">
 		<section class="hero_single">
 			<figure>
-				<?php the_post_thumbnail() ?>
+				<?php the_post_thumbnail(); ?>
 			</figure>
 		</section>
 		<h1><?php the_title(); ?></h1>

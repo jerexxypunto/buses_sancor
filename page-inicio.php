@@ -47,19 +47,25 @@ get_header();
       </a>
     </div>
     <div class="contenedor-boton-carrousel">
-      <a class="boton-enlace" href="./"><span class="triangle triangle-left"></span>Leer más<span class="triangle triangle-rigth"></span></a>
+      <a class="boton-enlace" href="./#hacemos"><span class="triangle triangle-left"></span>Leer más<span class="triangle triangle-rigth"></span></a>
     </div>
   </section>
   <!-- Hero - end -->
   <!-- ¿Qué hacemos? -->
   <section id="hacemos">
-    <h1 class="text-center tituloDeSeccion"><span class="black-text">¿</span> Por qué elegir Buses Sancor <span class="black-text">?</span></h1>
     <div class="container">
-      <h3>Nos tomamos enserio tu seguridad y comodidad</h3>
+      <figure class="row justify-content-around">
+        <img src="<?php echo get_template_directory_uri()?>/img/cinturon-seg.png" alt="">
+        <img src="<?php echo get_template_directory_uri()?>/img/chair.png" alt="">
+        <img src="<?php echo get_template_directory_uri()?>/img/confiaabel.png" alt="">
+      </figure>
+    </div>
+    <h1 class="text-center tituloDeSeccion"><span class="black-text">¿</span> Por qué elegir Buses Sancor <span class="black-text">?</span></h1>
+      <h3 class="text-center">Nos tomamos enserio tu seguridad y comodidad</h3>
       <div class="inicio-box-container">
         <div class="inicio-box">
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 inicio-box__info">
               <h4>Nuestra flota</h4>
               <p>Contamos con una flota moderna y acorde a las necesidades de nuestros clientes, permitiendo la realización del
                 servicio
@@ -68,7 +74,7 @@ get_header();
                 que nos permiten contar con un amplio respaldo de nuestros usuarios.</p>
             </div>
             <div class="col-12 col-md-6">
-              <figure class="justify-content-center">
+              <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/buses.png" alt="buses">
               </figure>
             </div>
@@ -76,7 +82,7 @@ get_header();
         </div>
         <div class="inicio-box">
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 inicio-box__info">
               <h4>Mantenimiento exhaustivo</h4>
               <p>Nuestra flota se encuentra periódicamente sometida a mantenimiento en sus diversos ámbitos como carrocería, motor,
                 luces, neumáticos, etc. para ello nuestra empresa cuenta con un taller exclusivo en el cual se realizan estas
@@ -85,7 +91,7 @@ get_header();
               </p>
             </div>
             <div class="col-12 col-md-6">
-              <figure class="justify-content-center">
+              <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/tools.png" alt="Herramientas">
               </figure>
             </div>
@@ -93,7 +99,7 @@ get_header();
         </div>
         <div class="inicio-box">
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 inicio-box__info">
               <h4>Servicio de calidad</h4>
               <p>Contamos con un personal capacitado y grato que nos permite ofrecer un servicio cálido en la fecha y hora que
                 lo
@@ -105,19 +111,19 @@ get_header();
               </p>
             </div>
             <div class="col-12 col-md-6">
-              <figure class="justify-content-center">
+              <figure>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/happy.png" alt="happy">
               </figure>
             </div>
           </div>
         </div>
       </div>
-      <h3>Nos preocupa que aproveches tus recursos</h3>
+      <h3 class="text-center">Nos preocupa que aproveches tus recursos</h3>
       <div class="inicio-box-container">
         <div class="inicio-box">
           <div class="row">
             <div class="col-12 col-md-6">
-              <figure class="justify-content-center">
+              <figure>
                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/Hablar.png" alt="dos personas hablando">
               </figure>
             </div>
@@ -133,7 +139,7 @@ get_header();
         <div class="inicio-box">
           <div class="row">
             <div class="col-12 col-md-6">
-              <figure class="justify-content-center">
+              <figure>
                 <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/Ahorro.png" alt="Ahorro">
               </figure>
             </div>
@@ -144,10 +150,6 @@ get_header();
           </div>
         </div>
       </div>
-
-
-
-    </div>
     <div class="blue-section">
       <div class="container">
         <div class="row">

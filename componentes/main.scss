@@ -47,12 +47,14 @@ h1,h2{
     color:var(--color-variacion);
     font-family: 'Roboto Slab', serif;
     font-style: italic;
+    & > * {font-family: inherit;}
 }
 h3{
     color: #0C1E2C;
     font-style: italic;
     font-family: 'Roboto Slab', serif;
     margin-bottom: 40px;
+    & > * {font-family: inherit;}
 }
 
 label{
@@ -78,25 +80,46 @@ a{
 @import '_widgets.scss';
 @import '_contacto.scss';
 .inicio-box-container{
-    margin-bottom: 130px;
     &:nth-child(2) + h3{
         text-align: right;
     }
 }
+#hacemos{
+    h3{
+        padding-left: 50px;
+        margin-top: 40px;
+    }
+}
 .inicio-box{
-    padding: 10px 0 0 0;
+     .row{
+        width: 100vw;
+        overflow: hidden;
+    }
+    &__info{
+        padding: 40px 20px 0px 100px;
+        & + div{
+            margin:0;
+            padding:0;
+        }
+    }
     h3{
         text-align: center;
     }
     p{
         text-align: justify;
     }
+    figure{
+        margin:0;
+        padding:0;
+    }
     img{
         display: block;
         margin: 0 auto;
-        max-height: 150px;
+        width: 100%;
+        object-fit: cover;
     }
 }
+
 .blue-section{
     background-color:var(--color-primario);
     background-image: url(../img/bg-1.jpg);

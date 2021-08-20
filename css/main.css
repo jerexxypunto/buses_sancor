@@ -52,12 +52,18 @@ h4, h5, h6 {
   font-family: "Roboto Slab", serif;
   font-style: italic;
 }
+h4 > *, h5 > *, h6 > * {
+  font-family: inherit;
+}
 
 h3 {
   color: #0C1E2C;
   font-style: italic;
   font-family: "Roboto Slab", serif;
   margin-bottom: 40px;
+}
+h3 > * {
+  font-family: inherit;
 }
 
 label {
@@ -280,36 +286,30 @@ a:hover {
   text-align: center;
 }
 
-.page-main article {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.page-main {
+  padding-bottom: 70px;
 }
-.page-main article .entry-header {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-.page-main article .post-thumbnail {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-.page-main article .post-thumbnail img {
-  -o-object-position: center;
-     object-position: center;
+.page-main .hero_page img {
+  width: 100%;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.page-main article .entry-content {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+.page-main h1 {
+  margin-bottom: 150px;
+}
+.page-main h3 {
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+.page-main h3:nth-child(1) {
+  margin-top: 0;
+}
+.page-main h4 {
+  margin-bottom: 15px;
+}
+.page-main h5 {
+  margin-bottom: 10px;
 }
 
 .flota-page .contenedor-filtro {
@@ -555,15 +555,25 @@ a:hover {
   background-color: var(--color-primario);
 }
 
-.inicio-box-container {
-  margin-bottom: 130px;
-}
 .inicio-box-container:nth-child(2) + h3 {
   text-align: right;
 }
 
-.inicio-box {
-  padding: 10px 0 0 0;
+#hacemos h3 {
+  padding-left: 50px;
+  margin-top: 40px;
+}
+
+.inicio-box .row {
+  width: 100vw;
+  overflow: hidden;
+}
+.inicio-box__info {
+  padding: 40px 20px 0px 100px;
+}
+.inicio-box__info + div {
+  margin: 0;
+  padding: 0;
 }
 .inicio-box h3 {
   text-align: center;
@@ -571,10 +581,16 @@ a:hover {
 .inicio-box p {
   text-align: justify;
 }
+.inicio-box figure {
+  margin: 0;
+  padding: 0;
+}
 .inicio-box img {
   display: block;
   margin: 0 auto;
-  max-height: 150px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blue-section {

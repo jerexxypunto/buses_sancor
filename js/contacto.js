@@ -16,7 +16,7 @@ const verificar = (e) => {
             console.log(exprecion_reg.telefono.test(e.target.value));
             break;
         case "correo":
-            console.log(e.target.value.contain("@"));
+            console.log(e.target.value.includes("@"));
             break;
         default:
             break;
@@ -36,15 +36,15 @@ document.querySelector("#formulario textarea").addEventListener('keyup', (e)=>{
 
 inputs.forEach(input =>{
     input.addEventListener('keypress', verificar);
-    input.addEventListener('blur', verificar);
+    // input.addEventListener('blur', verificar);
 });
 
-setInterval(() => {
-    if (completado.nombre && completado.telefono && completado.correo && completado.msg) {
-        document.querySelector(".submit-ocultar").classList.add('disabled');
-        document.querySelector("#formulario .alert-container").style.display = 'none';
-    }else{
-        document.querySelector(".submit-ocultar").classList.remove('disabled');
-        document.querySelector("#formulario .alert-container").style.display = 'block';
-    }
-}, 100);
+// setInterval(() => {
+//     if (completado.nombre && completado.telefono && completado.correo && completado.msg) {
+//         document.querySelector(".submit-ocultar").classList.add('disabled');
+//         document.querySelector("#formulario .alert-container").style.display = 'none';
+//     }else{
+//         document.querySelector(".submit-ocultar").classList.remove('disabled');
+//         document.querySelector("#formulario .alert-container").style.display = 'block';
+//     }
+// }, 100);

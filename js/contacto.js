@@ -2,7 +2,7 @@ let completado = {nombre:false,telefono:false,correo:false,msg:false};
 
 const exprecion_reg = {
     nombre: /^[a-zA-ZÁ-ÿ\s]{1,40}$/gim,
-    telefono: /^\d{7,14}$/gim,
+    telefono: /\+\d{7,14}/gim,
 }
 const inputs = document.querySelectorAll('#formulario input');
 const input_show = document.querySelectorAll('#formulario span');

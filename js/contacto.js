@@ -10,55 +10,14 @@ const input_show = document.querySelectorAll('#formulario span');
 const verificar = (e) => {
     switch (e.target.name) {
         case "nombreDePila":
-            console.log(e.target.name);
             console.log(exprecion_reg.nombre.test(e.target.value));
-            if (exprecion_reg.nombre.test(e.target.value)) {
-                    e.target.classList.remove("incorrecto");
-                    e.target.classList.add("correcto");
-                    input_show[0].classList.remove("error");
-                    input_show[0].classList.add("acepted");
-                    completado.nombre = true;
-                    console.log(e.target.value);
-                    console.log("valido");
-            }else {
-                e.target.classList.remove("correcto");
-                e.target.classList.add("incorrecto");
-                input_show[0].classList.remove("acepted");
-                input_show[0].classList.add("error");
-                completado.nombre = false;
-                console.log(e.target.value);
-                console.log("invalido");
-            }
             break;
         case "telefono":
-            if (exprecion_reg.telefono.test(e.target.value)) {
-                    e.target.classList.remove("incorrecto");
-                    e.target.classList.add("correcto");
-                    input_show[1].classList.remove("error");
-                    input_show[1].classList.add("acepted");
-                    completado.telefono = true;
-            } else {
-                e.target.classList.remove("correcto")
-                e.target.classList.add("incorrecto");
-                input_show[1].classList.remove("acepted");
-                input_show[1].classList.add("error");
-                completado.telefono = false;
-            }
-        break;
+            console.log(exprecion_reg.telefono.test(e.target.value));
+            break;
         case "correo":
-            if (e.target.value.includes('@')) {
-                e.target.classList.remove("incorrecto");
-                e.target.classList.add("correcto");
-                input_show[2].classList.remove("error");
-                input_show[2].classList.add("acepted");
-                completado.correo = true;
-            } else {
-                e.target.classList.remove("correcto");
-                e.target.classList.add("incorrecto");
-                input_show[2].classList.remove("acepted");
-                input_show[2].classList.add("error");
-                completado.correo = false;
-            }
+            console.log(e.target.value.contain("@"));
+            break;
         default:
             break;
     }
@@ -76,7 +35,7 @@ document.querySelector("#formulario textarea").addEventListener('keyup', (e)=>{
 });
 
 inputs.forEach(input =>{
-    input.addEventListener('keyup', verificar);
+    input.addEventListener('keypress', verificar);
     input.addEventListener('blur', verificar);
 });
 

@@ -27,12 +27,12 @@ get_header();
                     <div class="row">
                         <label class="col-10 pb-3">
                             Nombre de pila
-                            <input class="form-control" id="Nombre" type="text" placeholder="Jhon Doe" name="nombreDePila">
+                            <input class="form-control" id="Nombre" type="text" placeholder="Juan Pérez" name="nombreDePila">
                         </label>
                         <span id="res-nombre" class="col-2"></span>
                         <label class="col-10 pb-3">
                             Teléfono
-                            <input class="form-control" id="telefono" type="text" placeholder="+56 999 999 999" name="telefono">
+                            <input class="form-control" id="telefono" type="text" placeholder="+56999999999" name="telefono">
                         </label>
                         <span id="res-telefono col-2"></span>
                         <label class="col-10 pb-3">

@@ -6,67 +6,72 @@ const exprecion_reg = {
 }
 const inputs = document.querySelectorAll('#formulario input');
 const input_show = document.querySelectorAll('#formulario span');
-inputs[0].addEventListener('keyup', (e)=>{
-    if (exprecion_reg.nombre.test(e.target.value)){
-        if (e.target.value !== "") {
-            e.target.classList.remove("incorrecto")
-            e.target.classList.add("correcto")
-            input_show[0].classList.remove("error");
-            input_show[0].classList.add("acepted");
-            completado.nombre = true;
-        }else{
-            e.target.classList.remove("correcto")
-            e.target.classList.add("incorrecto");
-            input_show[0].classList.remove("acepted");
-            input_show[0].classList.add("error");
-            completado.nombre = false;
-        }
-    }else{
-        e.target.classList.remove("correcto")
-        e.target.classList.add("incorrecto");
-        input_show[0].classList.remove("acepted");
-        input_show[0].classList.add("error");
-        completado.nombre = false;
+
+const verificar = (e) => {
+    switch (e.target.name) {
+        case "nombreDePila":
+            if (exprecion_reg.nombre.test(e.target.value)) {
+                if (e.target.value !== "") {
+                    e.target.classList.remove("incorrecto")
+                    e.target.classList.add("correcto")
+                    input_show[0].classList.remove("error");
+                    input_show[0].classList.add("acepted");
+                    completado.nombre = true;
+                } else {
+                    e.target.classList.remove("correcto")
+                    e.target.classList.add("incorrecto");
+                    input_show[0].classList.remove("acepted");
+                    input_show[0].classList.add("error");
+                    completado.nombre = false;
+                }
+            } else {
+                e.target.classList.remove("correcto")
+                e.target.classList.add("incorrecto");
+                input_show[0].classList.remove("acepted");
+                input_show[0].classList.add("error");
+                completado.nombre = false;
+            }
+            break;
+        case "telefono":
+            if (exprecion_reg.telefono.test(e.target.value)) {
+                if (e.target.value !== "") {
+                    e.target.classList.remove("incorrecto")
+                    e.target.classList.add("correcto")
+                    input_show[1].classList.remove("error");
+                    input_show[1].classList.add("acepted");
+                    completado.telefono = true;
+                } else {
+                    e.target.classList.remove("correcto");
+                    e.target.classList.add("incorrecto");
+                    input_show[1].classList.remove("acepted");
+                    input_show[1].classList.add("error");
+                    completado.telefono = false;
+                }
+            } else {
+                e.target.classList.remove("correcto")
+                e.target.classList.add("incorrecto");
+                input_show[1].classList.remove("acepted");
+                input_show[1].classList.add("error");
+                completado.telefono = false;
+            }
+        case "correo":
+            if (e.target.value.includes('@')) {
+                e.target.classList.remove("incorrecto");
+                e.target.classList.add("correcto");
+                input_show[2].classList.remove("error");
+                input_show[2].classList.add("acepted");
+                completado.correo = true;
+            } else {
+                e.target.classList.remove("correcto");
+                e.target.classList.add("incorrecto");
+                input_show[2].classList.remove("acepted");
+                input_show[2].classList.add("error");
+                completado.correo = false;
+            }
+        default:
+            break;
     }
-});
-inputs[1].addEventListener('keyup', (e)=>{
-    if (exprecion_reg.telefono.test(e.target.value)) {
-        if (e.target.value !== "") {
-            e.target.classList.remove("incorrecto")
-            e.target.classList.add("correcto")
-            input_show[1].classList.remove("error");
-            input_show[1].classList.add("acepted");
-            completado.telefono = true;
-        }else{
-            e.target.classList.remove("correcto");
-            e.target.classList.add("incorrecto");
-            input_show[1].classList.remove("acepted");
-            input_show[1].classList.add("error");
-            completado.telefono = false;
-        }
-    }else{
-        e.target.classList.remove("correcto")
-        e.target.classList.add("incorrecto");
-        input_show[1].classList.remove("acepted");
-        input_show[1].classList.add("error");
-        completado.telefono = false;
-    }
-});
-inputs[2].addEventListener('keyup', (e)=>{
-    if (e.target.value.includes('@')) {
-            e.target.classList.remove("incorrecto");
-            e.target.classList.add("correcto");
-            input_show[2].classList.remove("error");
-            input_show[2].classList.add("acepted");
-            completado.correo = true;
-    }else{
-        e.target.classList.remove("correcto");
-        e.target.classList.add("incorrecto");
-        input_show[2].classList.remove("acepted");
-        input_show[2].classList.add("error");
-        completado.correo = false;
-    }
-});
+}
 document.querySelector("#formulario textarea").addEventListener('keyup', (e)=>{
     if(e.target.value !== ""){
         e.target.classList.remove("incorrecto");
@@ -77,6 +82,11 @@ document.querySelector("#formulario textarea").addEventListener('keyup', (e)=>{
         e.target.classList.add("incorrecto");
         completado.msg = false;
     }
+});
+
+inputs.forEach(input =>{
+    input.addEventListener('keyup', verificar);
+    input.addEventListener('blur', verificar);
 });
 
 setInterval(() => {

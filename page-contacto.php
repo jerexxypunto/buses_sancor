@@ -25,6 +25,17 @@ get_header();
                 <form class="col-12 col-md-7" id="formulario" action="../enviar" method="post">
                 <h3>¿Con quién trabajaremos?</h3>
                     <div class="row">
+                        <div class="col-10">
+                            <div class="alert-container">
+                                <div class="alert alert-warning">
+                                    <p> * El nombre de pila hace referencia sólo al primer nombre y al primer apellido. <p/> 
+                                    <p> * El teléfono se escribe sin símbolos extraños [-, +, $, etc.]. </p>
+                                </div>
+                                <div class="alert alert-danger">
+                                    Por favor NO deje ninguna casilla en blanco, si las casillas no se llenan correctamente, no podrá enviarse el formulario.
+                                </div>
+                            </div>
+                        </div>
                         <label class="col-10 pb-3">
                             Nombre de pila
                             <input class="form-control" id="Nombre" type="text" placeholder="Jhon Doe" name="nombreDePila">
@@ -51,15 +62,6 @@ get_header();
                         <div class="col-10">
                             <input type="submit" id="send-button" value="Enviar" name="enviar">
                             <span class="submit-ocultar"></span>
-                            <div class="alert-container">
-                                <div class="alert alert-warning">
-                                    <p> * El nombre de pila hace referencia sólo al primer nombre y al primer apellido. <p/> 
-                                    <p> * El teléfono se escribe sin símbolos extraños [-, +, $, etc.]. </p>
-                                </div>
-                                <div class="alert alert-danger">
-                                    Por favor NO deje ninguna casilla en blanco, si las casillas no se llenan correctamente, no podrá enviarse el formulario.
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </form>

@@ -54,6 +54,7 @@ const verificar = (e) => {
                 input_show[1].classList.add("error");
                 completado.telefono = false;
             }
+            break;
         case "correo":
             if (e.target.value.includes('@')) {
                 e.target.classList.remove("incorrecto");

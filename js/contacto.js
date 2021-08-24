@@ -35,8 +35,14 @@ document.querySelector("#formulario textarea").addEventListener('keyup', (e)=>{
 });
 
 inputs.forEach(input =>{
-    input.addEventListener('keypress', verificar);
-    // input.addEventListener('blur', verificar);
+    input.addEventListener("keypress", verificar);
+    input.addEventListener("blur", (e) => { 
+        console.log(e.target);
+        console.log(e.target.value);
+        console.log(exprecion_reg.nombre);
+        console.log(exprecion_reg.nombre.test(e.target.value));
+    });
+
 });
 
 // setInterval(() => {

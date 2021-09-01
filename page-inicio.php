@@ -158,13 +158,11 @@ get_header();
       </div>
     <div class="blue-section">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <figure class="d-flex justify-content-between">
+        <div class="contenedor-grid grid-col-2">
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/Sernatur.png" alt="sernatur">
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/reloj.png" alt="reloj">
-            </figure>
-          </div>
+        </div>
+        <div class="row">
           <div class="col-12 col-md-6">
             <h3>Reserva tu hora con nosotros</h3>
             <p>Nuestra empresa permite que solicites presupuestos y reserves el traslado con anticipación, para ellos debes contactarte
@@ -194,7 +192,7 @@ get_header();
       <center>
         <div 
           class="fb-comments" 
-          data-href="http://www.sancor.cl/comments/"
+          data-href="https://sancor.cl"
           data-width="100%" data-numposts="2">
         </div>
       </center>

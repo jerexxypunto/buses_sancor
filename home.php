@@ -48,7 +48,7 @@ get_header();
 							</a>
 						</figure>
 						<h3><?php the_title(); ?></h3>
-						<p>
+						<p class="category-bg">
 							<?php echo the_category('&bull;') ?>
 						</p>
 					</article>

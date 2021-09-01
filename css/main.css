@@ -237,7 +237,8 @@ a:hover {
 }
 
 .footer {
-  padding: 50px 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   width: 100%;
   background-color: var(--color-gray);
   min-height: 30vh;
@@ -352,6 +353,14 @@ a:hover {
 .flota-page article p {
   margin: 0;
   padding: 0;
+}
+.flota-page article p a {
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 1.5px 5px;
+}
+.flota-page article p a:hover {
+  background-color: var(--color-primario);
 }
 .flota-page article figure {
   height: 250px;
@@ -564,18 +573,10 @@ a:hover {
   margin-top: 40px;
 }
 
-.carousel-inner {
-  overflow: visible;
+.inicio-box {
+  padding: 1.5px 3px;
 }
-
 .inicio-box .row {
-  width: 100vw;
-  overflow: hidden;
-}
-.inicio-box__info {
-  padding: 40px 20px 0px 100px;
-}
-.inicio-box__info + div {
   margin: 0;
   padding: 0;
 }

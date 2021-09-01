@@ -47,3 +47,6 @@
 .inicio-box img {
     max-height: 300px;
 }
+.inicio-box__info {
+    padding: 40px 20px 0px 100px;
+}

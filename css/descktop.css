@@ -1,19 +1,16 @@
 #hero {
-    min-height: 50vh;
+    height: max-content;
     margin-bottom: 40px;
 }
+
 #hero .carousel{
     margin: 0 auto;
-    height: 450px;
 }
-.carousel-inner{
-    height: 100%;
+#hero .carousel-inner{
+    height: 80vh;
 }
-.carousel-item{
-    height: 100%;
-}
-.carousel img{
-    object-fit: cover;
+#hero .carousel-item{
+    height: 70vh;
 }
 #hero .contenedor-boton-carrousel{
     max-width:1000px;
@@ -31,18 +28,7 @@
     grid-column: 3/4;
     font-size: 40px;
 }
-#hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{
-    border-left: 30px solid var(--color-primario);
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    right:-30px
-}
-#hero .contenedor-boton-carrousel .boton-enlace .triangle-left{
-    border-right: 30px solid var(--color-primario);
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    left: -30px;
-}
+
 
 .inicio-box img {
     max-height: 300px;

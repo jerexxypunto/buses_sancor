@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootsrap.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/tablet.css" media="screen and (min-width:900px)">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/tablet.css" media="screen and (min-width:500px)">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/descktop.css" media="screen and (min-width:992px)">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fontawesome/css/all.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">

@@ -1,9 +1,5 @@
-#hero {
-    height: 80vh;
-}
 #hero .carousel{
     margin: 0 auto;
-    height: 450px;
 }
 #hero .carousel img{
     height: 100%;
@@ -16,16 +12,16 @@
     font-size: 39px;
 }
 #hero .contenedor-boton-carrousel .boton-enlace .triangle-rigth{
-    border-left: 23px solid var(--color-primario);
-    border-top: 23px solid transparent;
-    border-bottom: 23px solid transparent;
-    right:-23px
+    border-left: 30px solid var(--color-primario);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    right:-30px
 }
 #hero .contenedor-boton-carrousel .boton-enlace .triangle-left{
-    border-right: 23px solid var(--color-primario);
-    border-top: 23px solid transparent;
-    border-bottom: 23px solid transparent;
-    left: -23px;
+    border-right: 30px solid var(--color-primario);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    left: -30px;
 }
 .banner-flota {
     height: 400px;

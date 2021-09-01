@@ -176,6 +176,17 @@ a:hover {
   }
 }
 
+#hero .carousel-inner {
+  height: 60vh;
+}
+#hero .carousel-item {
+  height: 50vh;
+}
+#hero .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #hero .contenedor-boton-carrousel {
   width: 100%;
   display: -ms-grid;

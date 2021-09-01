@@ -1,4 +1,16 @@
 #hero{
+    .carousel{
+        &-inner{
+            height: 60vh;
+        }
+        &-item{
+            height: 50vh;
+            img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
     .contenedor-boton-carrousel{
         width: 100%;
         display: grid;

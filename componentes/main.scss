@@ -30,6 +30,10 @@ h1{
     font-style: italic;
     margin-bottom: 100px;
     text-align: center;
+    @media screen and (max-width: 480px) {
+        -webkit-text-stroke: 0;
+        color: #000F63;
+    }
     span.black-text{
         color: var(--color-primario);
         font-family: inherit;
@@ -40,10 +44,7 @@ h2{
     color: white;
     font-family:'Cooper', 'Roboto Slab', sans-serif;
 }
-h1,h2{
-    color: white;
-    font-family:'Cooper';
-}h4,h5,h6{
+h4,h5,h6{
     color:var(--color-variacion);
     font-family: 'Roboto Slab', serif;
     font-style: italic;

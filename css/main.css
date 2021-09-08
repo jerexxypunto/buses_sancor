@@ -355,6 +355,22 @@ a:hover {
 .flota-page article {
   padding-bottom: 15px;
 }
+.flota-page article .category-bg::after {
+  content: "";
+  background-image: url(../img/chair-ico.png);
+  background-size: contain;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  top: 8px;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+.flota-page article .category-bg:hover::after {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
 .flota-page article:hover figure {
   -webkit-box-shadow: 0 0 0 3px var(--color-variacion);
           box-shadow: 0 0 0 3px var(--color-variacion);

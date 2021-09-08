@@ -42,7 +42,11 @@
 		<header class="header">
 			<div class="container">
 				<div class="row navigator">
-					<div class="col-9 col-md-4 navigator_logo"><img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/sancor-logo.png" alt="logo"></div>
+					<div class="col-9 col-md-4 navigator_logo">
+						<a href="<?php bloginfo("url")?>">
+						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/sancor-logo.png" alt="logo">
+						</a>
+					</div>
 					<div class="col-3 col-md-8 navigator_menu--button">
 						<nav> <span class="fas fa-bars"></span></nav>
 					</div>

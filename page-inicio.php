@@ -133,7 +133,7 @@ get_header();
               <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/reloj.png" alt="reloj">
         </div>
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 offset-md-6">
             <h3>Reserva tu hora con nosotros</h3>
             <p>Nuestra empresa permite que solicites presupuestos y reserves el traslado con anticipación, para ellos debes contactarte
               vía mail (hacer click enlace de más abajo), celular o presencialmente en nuestra sucursal, además para

@@ -21,6 +21,24 @@
         }
     }
     article{
+        .category-bg{
+            &::after{
+                content: "";
+                background-image: url(../img/chair-ico.png);
+                background-size: contain;  
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                position: relative;
+                top: 8px;
+                transition: .1s ease-in-out;
+            }
+            &:hover{
+                &::after{
+                    transform: translateX(5px);
+                }
+            }
+        }
         &:hover{
             figure{
                 box-shadow: 0 0 0 3px var(--color-variacion);

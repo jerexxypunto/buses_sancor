@@ -90,6 +90,9 @@ a{
         padding-left: 50px;
         margin-top: 40px;
     }
+    figure p {
+        text-align: center;
+    }
 }
 .inicio-box{
     .row{
@@ -142,7 +145,7 @@ a{
 }
 .banner-flota{
     img{
-        object-fit: cover;
+        object-fit: contain;
         width: 100%;
         height: 100%;
     }

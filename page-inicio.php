@@ -31,9 +31,18 @@ get_header();
   <section id="hacemos">
     <div class="container">
       <figure class="row justify-content-around">
-        <img src="<?php echo get_template_directory_uri()?>/img/cinturon-seg.png" alt="">
-        <img src="<?php echo get_template_directory_uri()?>/img/chair.png" alt="">
-        <img src="<?php echo get_template_directory_uri()?>/img/confiaabel.png" alt="">
+        <div>
+          <p><strong>Viajes especiales</strong></p>
+          <img src="<?php echo get_template_directory_uri()?>/img/cinturon-seg.png" alt="">
+        </div>
+        <div>
+          <p><strong>Arriendo de buses</strong></p>
+          <img src="<?php echo get_template_directory_uri()?>/img/chair.png" alt="">
+        </div>
+        <div>
+          <p><strong>Transporte de trabajadores</strong></p>
+          <img src="<?php echo get_template_directory_uri()?>/img/confiaabel.png" alt="">
+        </div>
       </figure>
     </div>
     <h1 class="text-center tituloDeSeccion"><span class="black-text">¿</span> Por qué elegir Buses Sancor <span class="black-text">?</span></h1>

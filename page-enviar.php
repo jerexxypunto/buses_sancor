@@ -9,7 +9,7 @@ require 'PHPMailer/src/SMTP.php';
 $respuesta;
 
 $mail = new PHPMailer;
-$my_email = 'contacto@sancor.cl';
+$my_email = 'ayuda@sancor.cl';
 try {        
         $mail->SMTPDebug = 3;                               // Enable verbose debug output
         $nombre = $_POST['nombreDePila'];

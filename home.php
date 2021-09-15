@@ -17,6 +17,9 @@ get_header();
 ?>
 
 <main id="primary" class="flota-page site-main">
+	<figure class="banner-flota">
+		<img src="<?php echo get_template_directory_uri()?>/img/banner-flota.jpg" alt="banner-flota">
+	</figure>
 	<h1 class="text-center">Flota</h1>
 	<div class="container">
 		<div class="contenedor-filtro">

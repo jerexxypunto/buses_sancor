@@ -16,6 +16,7 @@ try {
         $nombre = utf8_decode($nombre); 
         $correo = $_POST['correo'];
         $telefono = $_POST['telefono'];
+        $telefono = '+56'.$telefono;
         $msj = $_POST['mensaje'];
         $msj = utf8_decode($msj);
 

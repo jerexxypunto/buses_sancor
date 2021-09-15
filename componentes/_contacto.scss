@@ -15,6 +15,23 @@
         }
     }
     #formulario{
+        #phone-label{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
+        #phone-label p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color-primario);
+            color: #fff;
+            text-align: center;
+            height: 100%;
+            margin:0;
+            padding:0;
+            border-radius: 10px 0 0 10px;
+
+        }
         input,textarea{
             border:1.5px solid var(--color-primario);
             border-radius: 0px;

@@ -29,7 +29,7 @@ get_header();
                             <div class="alert-container">
                                 <div class="alert alert-warning">
                                     <p> * El nombre de pila hace referencia sólo al primer nombre y al primer apellido. <p/> 
-                                    <p> * El teléfono se escribe con el codigo de área (+56) y sin espacios. </p>
+                                    <p> * El teléfono se escribe anteponiendo un 9 y sin espacios.      </p>
                                 </div>
                                 <div class="alert alert-danger">
                                     Por favor <b>NO</b> deje ninguna casilla en blanco, si las casillas no se llenan correctamente, no podrá enviarse el formulario.
@@ -43,7 +43,10 @@ get_header();
                         <span id="res-nombre" class="col-2"></span>
                         <label class="col-10 pb-3">
                             Teléfono
-                            <input class="form-control" id="telefono" type="text" placeholder="+56999999999" name="telefono">
+                            <div id="phone-label">
+                                <p>+56</p>
+                                <input class="form-control" id="telefono" type="text" placeholder="999999999" name="telefono">
+                            </div>
                         </label>
                         <span id="res-telefono col-2"></span>
                         <label class="col-10 pb-3">

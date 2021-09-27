@@ -40,8 +40,3 @@
 .banner-flota{
     height: 500px;
 }
-@media screen and (min-width:1570px){
-    .banner-flota img{
-        object-fit: cover;
-    }
-}

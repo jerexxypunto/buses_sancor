@@ -177,6 +177,10 @@ a:hover {
   }
 }
 
+#hero {
+  max-width: 1519.2px;
+  margin: 0 auto;
+}
 #hero .carousel-inner {
   height: 60vh;
 }
@@ -516,23 +520,6 @@ a:hover {
      object-fit: contain;
 }
 
-.page-contacto .banner-flota {
-  position: relative;
-}
-.page-contacto .banner-flota figcaption {
-  position: absolute;
-  right: 10%;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-}
-.page-contacto .banner-flota figcaption h1 {
-  margin: 0;
-  padding: 0;
-}
 .page-contacto #formulario #phone-label {
   display: -ms-grid;
   display: grid;
@@ -696,10 +683,15 @@ a:hover {
   padding: 0 5%;
 }
 
-.banner-flota {
-  height: 200px;
+.banner-flota figure,
+.hero-page figure,
+.page-main figure {
+  max-width: 1519.2px;
+  margin: 0 auto;
 }
-.banner-flota img {
+.banner-flota img,
+.hero-page img,
+.page-main img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;

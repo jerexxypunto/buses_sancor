@@ -20,7 +20,7 @@ get_header();
         <figure class="banner-flota">
            <img src="<?php echo get_template_directory_uri()?>/img/banner-contacto.jpg" alt="banner contacto">
         </figure>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <form class="col-12 col-md-7" id="formulario" action="../enviar" method="post">
                 <h3>¿Con quién trabajaremos?</h3>

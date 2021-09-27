@@ -16,13 +16,13 @@ get_header();
 				<?php the_post_thumbnail(); ?>
 			</figure>
 		</section>
-		<h1><?php the_title(); ?></h1>
-		<p><?php echo the_category() ?></p>
-		<section class="content">
-			<div class="container">
+		<div class="container">
+			<h1><?php the_title(); ?></h1>
+			<h3><?php echo the_category() ?></h3>
+			<section class="content">
 				<?php the_content() ?>
-			</div>
-		</section>
+			</section>
+		</div>
 	</main>
 
 <?php

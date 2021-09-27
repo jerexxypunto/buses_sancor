@@ -71,3 +71,13 @@ if (existe(document.querySelector(".contenedor-filtro"))){
    });
 
 }
+
+function mostrarScrool() {
+    let ScrollTop = document.documentElement.scrollTop;
+    if (ScrollTop > 200) {
+        document.querySelector(".header-container").classList.add('sombrado');
+    } else {
+        document.querySelector(".header-container").classList.remove('sombrado');
+    }
+}
+window.addEventListener('scroll', mostrarScrool);

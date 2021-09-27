@@ -37,29 +37,31 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'buses_sancor'); ?></a>
 
-		<div class="pre-header"></div>
-		<!-- Header -->
-		<header class="header">
-			<div class="container">
-				<div class="row navigator">
-					<div class="col-9 col-md-4 navigator_logo">
-						<a href="<?php bloginfo("url")?>">
-						<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/sancor-logo.png" alt="logo">
-						</a>
-					</div>
-					<div class="col-3 col-md-8 navigator_menu--button">
-						<nav> <span class="fas fa-bars"></span></nav>
-					</div>
-					<div class="col-12 col-md-6 navigator_menu" id="lista-menu">
-						<ul>
-							<li> <a href="<?php bloginfo("url") ?>">Inicio</a></li>
-							<li> <a href="<?php bloginfo("url") ?>/flota/">Flota</a></li>
-							<li> <a href="<?php bloginfo("url") ?>/nosotros">Nosotros</a></li>
-							<li> <a href="<?php bloginfo("url") ?>/preguntas-frecuentes/">Preguntas Frecuentes</a></li>
-							<li> <a href="<?php bloginfo("url") ?>/contacto">Contacto</a></li>
-						</ul>
+		<div class="header-container">
+			<div class="pre-header"></div>
+			<!-- Header -->
+			<header class="header">
+				<div class="container">
+					<div class="row navigator">
+						<div class="col-9 col-md-4 navigator_logo">
+							<a href="<?php bloginfo("url")?>">
+							<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/sancor-logo.png" alt="logo">
+							</a>
+						</div>
+						<div class="col-3 col-md-8 navigator_menu--button">
+							<nav> <span class="fas fa-bars"></span></nav>
+						</div>
+						<div class="col-12 col-md-6 navigator_menu" id="lista-menu">
+							<ul>
+								<li> <a href="<?php bloginfo("url") ?>">Inicio</a></li>
+								<li> <a href="<?php bloginfo("url") ?>/flota/">Flota</a></li>
+								<li> <a href="<?php bloginfo("url") ?>/nosotros">Nosotros</a></li>
+								<li> <a href="<?php bloginfo("url") ?>/preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+								<li> <a href="<?php bloginfo("url") ?>/contacto">Contacto</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</div>
 		<!-- Header - END -->

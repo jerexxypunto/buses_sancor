@@ -153,7 +153,8 @@ a{
 }
 .banner-flota,
 .hero-page,
-.page-main{
+.page-main,
+.hero_single{
     figure{
         max-width: 1519.2px;
         margin: 0 auto;
@@ -182,4 +183,7 @@ a{
     p{
         color: white;
     }
+}
+body{
+    padding-top: 150px;
 }

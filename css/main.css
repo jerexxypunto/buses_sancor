@@ -81,6 +81,17 @@ a:hover {
   color: var(--color-secundario);
 }
 
+.header-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+.header-container.sombrado {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
 .pre-header {
   height: 20px;
   width: 100%;
@@ -89,6 +100,8 @@ a:hover {
 
 .header {
   padding: 10px 0;
+  background-color: #fff;
+  width: 100%;
 }
 .header .navigator {
   -webkit-box-pack: justify;
@@ -685,13 +698,15 @@ a:hover {
 
 .banner-flota figure,
 .hero-page figure,
-.page-main figure {
+.page-main figure,
+.hero_single figure {
   max-width: 1519.2px;
   margin: 0 auto;
 }
 .banner-flota img,
 .hero-page img,
-.page-main img {
+.page-main img,
+.hero_single img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
@@ -719,4 +734,8 @@ a:hover {
 }
 .info-page p {
   color: white;
+}
+
+body {
+  padding-top: 150px;
 }

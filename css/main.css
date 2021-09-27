@@ -635,6 +635,17 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+.inicio-box__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 .inicio-box h3 {
   text-align: center;
 }
@@ -651,6 +662,11 @@ a:hover {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+  .inicio-box img {
+    margin-bottom: 15px;
+  }
 }
 
 .blue-section {

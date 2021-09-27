@@ -34,3 +34,12 @@
 .page-contacto .banner-flota figcaption h1 {
   font-size: 80px !important;
 }
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .inicio-box figure{
+        height: 100%;
+    }
+    .inicio-box figure img{
+        height: 100%;
+    }
+}

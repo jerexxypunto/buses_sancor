@@ -205,6 +205,12 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 800px) {
+  #hero .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
 #hero .contenedor-boton-carrousel {
   width: 100%;
   display: -ms-grid;
@@ -621,7 +627,6 @@ a:hover {
 }
 
 #hacemos h3 {
-  padding-left: 50px;
   margin-top: 40px;
 }
 #hacemos figure p {

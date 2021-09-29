@@ -6,6 +6,12 @@
 #hero .carousel{
     margin: 0 auto;
 }
+#hero .carousel-inner{
+    height: 550px;
+}
+#hero .carousel-item{
+    height: 450px;
+}
 #hero .contenedor-boton-carrousel{
     max-width:1000px;
     margin: 0 auto;
